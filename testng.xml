@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+    <suite name="My Testing Suite">
+        <test name="Scenarios">
+            <classes>
+                <class name="testcases.LoginTest">
+                    <methods>
+                        <include name="login"></include>
+                    </methods>
+                </class>
+                <class name="testcases.ScenarioOne_DoveTest">
+                    <methods>
+                        <include name="selectDoveItems"></include>
+                    </methods>
+                </class>
+                <class name="testcases.ScenarioThree_SkinCareTest">
+                    <methods>
+                        <include name="skinCareTest"></include>
+                    </methods>
+                </class>
+                <!--<class name="testcases.ScenarioTwo_ApparelTest">
+                    <methods>
+                        <include name="myShirts"></include>
+                    </methods>
+                </class>-->
+                <class name="testcases.ScenarioFour_MensSectionTest">
+                    <methods>
+                        <include name="selectMensProduct"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+    </suite>
