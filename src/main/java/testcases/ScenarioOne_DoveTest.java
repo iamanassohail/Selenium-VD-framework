@@ -6,13 +6,12 @@ import static objects.ScenarioOne_Dove.*;
 import static objects.ScenarioOne_Dove.Assertion;
 public class ScenarioOne_DoveTest extends BaseTest {
     @Test(description = "Select dove items")
-    public static void selectDoveItems() {
+    public static void DoveItemsTest() {
         clickHomeButton();
         scrollToElement();
-        clickDove();
+        clickDoveCategory();
         selectValues("Date New > Old");
         addToCart();
-        MainCall.webDriverWaits.sleep(5000);
         Assertion();
         clearCart();
     }

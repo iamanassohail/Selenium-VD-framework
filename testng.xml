@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-    <suite name="My Testing Suite">
+    <suite name="SeleniumTestSuiteVDFramework">
         <test name="Scenarios">
             <classes>
                 <class name="testcases.LoginTest">
@@ -10,22 +10,22 @@
                 </class>
                 <class name="testcases.ScenarioOne_DoveTest">
                     <methods>
-                        <include name="selectDoveItems"></include>
+                        <include name="DoveItemsTest"></include>
                     </methods>
                 </class>
                 <class name="testcases.ScenarioThree_SkinCareTest">
                     <methods>
-                        <include name="skinCareTest"></include>
+                        <include name="SkinCareTest"></include>
                     </methods>
                 </class>
-                <!--<class name="testcases.ScenarioTwo_ApparelTest">
+                <class name="testcases.ScenarioTwo_ApparelTest">
                     <methods>
-                        <include name="myShirts"></include>
+                        <include name="ShirtsAndShoesTest"></include>
                     </methods>
-                </class>-->
+                </class>
                 <class name="testcases.ScenarioFour_MensSectionTest">
                     <methods>
-                        <include name="selectMensProduct"></include>
+                        <include name="SelectMensProductTest"></include>
                     </methods>
                 </class>
             </classes>

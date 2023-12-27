@@ -119,7 +119,7 @@ public class BaseTest  {
         }
         if(IsEnableRecording.equals("true"))
             Recorder.stopRecording();
-        TestRail.getCaseIdandResultmobile(result,ctx,method,beforeAddingStepsLength,afterAddingStepsLength,automationSteps,beforeAddingExpectedResultLength,afterAddingExpectedResultLength,expectedResults,null);
+        //TestRail.getCaseIdandResultmobile(result,ctx,method,beforeAddingStepsLength,afterAddingStepsLength,automationSteps,beforeAddingExpectedResultLength,afterAddingExpectedResultLength,expectedResults,null);
         }
 
 
@@ -128,7 +128,7 @@ public class BaseTest  {
         return calendar.getTime();
     }
 
-    @AfterSuite
+    /*@AfterSuite
     public void tearDown() throws SQLException, APIException, IOException, MessagingException {
         endTime = getTime();
         dbconn.insertReportingDataIntoDB(startTime, passedCount, failedCount, skippedCount, startTime, endTime); //need to open after jira integration
@@ -156,6 +156,6 @@ public class BaseTest  {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
 }
